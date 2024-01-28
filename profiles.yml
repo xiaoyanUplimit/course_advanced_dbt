@@ -1,0 +1,15 @@
+course_advanced_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: efruuit-zh04827
+      user: zhangxiaoyan0106gmailcom
+      password: AZrhxQdbhK3RVsQXdr2oTwAduydG
+      role: transformer
+      database: dev
+      warehouse: transforming
+      # Add Snowflake username below again, keep dbt_ prefix
+      schema: dbt_zhangxiaoyan0106gmailcom
+      # Note this thread number, we'll come back to this later in the course
+      threads: 8
