@@ -48,7 +48,7 @@ on-run-end: "{{ dbt_project_evaluator.print_dbt_project_evaluator_issues() }}"
 
 vars:
   exclude_packages: ["upstream_package"] # excludes a specific package
-  exclude_packages: ["all"]
+ ## exclude_packages: ["all"]
    # excludes all package
 
 # on-run-end: "{{ dbt_project_evaluator.print_dbt_project_evaluator_issues() }}"
