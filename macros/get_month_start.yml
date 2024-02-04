@@ -1,0 +1,24 @@
+# Documentation for date-related macros
+
+macros:
+  - name: get_month_start
+    description: "Truncates a given date to the first day of its month."
+    arguments:
+      - name: date_column
+        description: "The column or expression representing a date."
+        type: "string (SQL expression)"
+
+  - name: add_months
+    description: "Adds a specified number of months to a given date."
+    arguments:
+      - name: date_column
+        description: "The column or expression representing a date from which months will be added."
+        type: "string (SQL expression)"
+      - name: num_months
+        description: "The number of months to add to the date. Can be negative to subtract months."
+        type: "integer"
+  ##  example_usage:
+  ##   - sql: "add_months('users.start_date', 3)"
+  ##    description: "If 'users.start_date' is '2024-01-01', this will result in '2024-04-01'."
+  ##    - sql: "add_months('users.start_date', -1)"
+  ##      description: "If 'users.start_date' is '2024-01-01', this will result in '2023-12-01'."
