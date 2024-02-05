@@ -4,8 +4,6 @@ course_advanced_dbt:
     dev:
       type: snowflake
       account: efruuit-zh04827
-      user: zhangxiaoyan0106gmailcom
-      password: AZrhxQdbhK3RVsQXdr2oTwAduydG
       role: transformer
       database: dev
       warehouse: transforming
