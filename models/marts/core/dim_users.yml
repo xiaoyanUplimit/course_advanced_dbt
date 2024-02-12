@@ -16,7 +16,7 @@ models:
 
       - name: created_at
         description: When the user account was created.
-  
+
 
       - name: phone_number
         description: the user's phone number.
@@ -59,4 +59,3 @@ models:
 
       - name: country
         description: Where the user lives.
-

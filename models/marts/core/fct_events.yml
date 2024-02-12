@@ -1,7 +1,7 @@
 models:
   - name: fct_events
     description: '{{ doc ("bingeflix_table_fct_events") }}'
-    
+
     columns:
       - name: user_id
         tests:

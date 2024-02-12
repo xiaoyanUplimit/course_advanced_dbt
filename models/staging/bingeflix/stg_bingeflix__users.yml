@@ -41,4 +41,3 @@ models:
 
       - name: country
         description: Where the user resides.
-
