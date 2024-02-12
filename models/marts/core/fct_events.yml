@@ -1,0 +1,27 @@
+models:
+  - name: fct_events
+    description: '{{ doc ("bingeflix_table_fct_events") }}'
+    
+    columns:
+      - name: user_id
+        tests:
+          - not_null
+        description: '{{ doc("bingeflix_column_user_id") }}'
+
+      - name: session_id
+        description: '{{ doc("bingeflix_column_session_id") }}'
+
+      - name: event_id
+        description: '{{ doc("bingeflix_column_event_id") }}'
+        tests:
+            - unique
+            - not_null
+
+      - name: event_name
+        description: '{{ doc("bingeflix_column_event_name") }}'
+        tests:
+          - not_null
+          - non_test_event
+
+      - name: created_at
+        description: '{{ doc("bingeflix_column_created_at") }}'

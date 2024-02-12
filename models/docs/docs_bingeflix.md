@@ -4,6 +4,10 @@ This file contains doumentation for Bingeflix data sources.
 ## Events
 This section contains documentation from the Bingeflix behavioral events while interacting with the platform.
 
+{% docs bingeflix_table_fct_events %}
+    This table contains information about the behavioral events of users while they interact with the Bingeflix platform.
+{% enddocs %}
+
 {% docs table_events %}
     This table contains information about the behavioral events of users while they interact with the Bingeflix platform.
 {% enddocs %}
