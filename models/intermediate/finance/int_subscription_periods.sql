@@ -22,18 +22,6 @@ monthly_subscriptions AS (
 ),
 
 -- Use the dates spine to generate a list of months
-months AS (
-    SELECT
-        calendar_date AS date_month
-    FROM
-       {{ ref('int_dates') }}
-       --  {{ ref('unit_test_input_int_dates') }}
-    WHERE
-        day_of_month = 1
-),
-
-
-
 
     SELECT
         subscription_id,
