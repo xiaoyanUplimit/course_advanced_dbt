@@ -18,3 +18,4 @@ FROM {{ ref('stg_bingeflix__events') }}
 
 {{ incremental_where_clause ('created_at', 7, 'months') }}
 
+
