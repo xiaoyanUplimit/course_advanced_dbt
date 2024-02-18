@@ -15,7 +15,6 @@ SELECT
 
 FROM {{ ref('stg_bingeflix__events') }}
 
-{ % if is_incremental() %}
-WHERE  created_at > (SELECT MAX(created_at) FROM {{this}})
-{ % endif %}
+
+{{ incremental_where_clause ('created_at', 7, 'months') }}
 

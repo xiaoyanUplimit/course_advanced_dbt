@@ -1,0 +1,4 @@
+
+macros:
+  - name: incremental_where_clause
+    description: "Macro for generating an incremental WHERE clause"
